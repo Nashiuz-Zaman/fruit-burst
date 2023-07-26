@@ -34,6 +34,7 @@
           extend: {
             colors: {
               primary: "#F85559",
+              darkText: "#121212",
             },
           },
         },
@@ -41,9 +42,11 @@
     </script>
   </head>
   <body class="font-lato">
-    <header class="px-5">
+    <header
+      class="px-5 lg:px-0 lg:max-w-[90rem] mx-auto mt-[2rem] md:mt-[3.12rem]"
+    >
       <nav
-        class="navbar bg-base-100 p-0 justify-between lg:py-10 lg:px-12 lg:bg-primary rounded-full"
+        class="navbar bg-base-100 p-0 justify-between lg:py-10 lg:px-12 lg:bg-primary rounded-full mb-3 md:mb-14"
       >
         <ul class="hidden lg:flex gap-[1.88rem]">
           <li><a class="text-white" href="#">Home</a></li>
@@ -59,7 +62,7 @@
             alt="logo"
           />
           <a
-            class="btn btn-ghost normal-case text-xl font-bold p-0 lg:text-[2.5rem] lg:text-white"
+            class="btn btn-ghost normal-case text-xl font-bold p-0 lg:text-[2.5rem] text-darkText lg:text-white"
             >Fruit Burst</a
           >
         </div>
@@ -71,7 +74,7 @@
           <input
             type="text"
             placeholder="Search here"
-            class="flex-1 text-base p-0"
+            class="flex-1 text-base p-0 focus:outline-none"
           />
           <img
             class="block p-0"
@@ -102,7 +105,7 @@
                 <input
                   type="text"
                   placeholder="Search here"
-                  class="flex-1 text-base p-0"
+                  class="flex-1 text-base p-0 focus:outline-none"
                 />
                 <img
                   class="block p-0"
@@ -118,6 +121,228 @@
           </div>
         </div>
       </nav>
+
+      <!-- carousel -->
+      <div
+        class="carousel w-full aspect-[1.76/1] lg:aspect-[2.4/1] rounded-lg overflow-hidden"
+      >
+        <!-- slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full h-full">
+          <!-- image of the slider -->
+          <img
+            class="block w-full h-full object-cover"
+            src="./assets/images/banner1.webp"
+            class="w-full"
+          />
+
+          <!-- overlay and text part -->
+          <div
+            class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-[#121212] to-[#12121200] flex justify-center pt-[1.69rem] sm:pt-[4.9375rem] lg:pt-[4.9375rem] z-10"
+          >
+            <div class="text-center">
+              <h1
+                class="text-white text-2xl md:text-6xl lg:text-7xl font-extrabold leading-[normal] mb-1 md:mb-6"
+              >
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+
+              <p
+                class="text-white font-normal text-sm md:text-xl md:font-medium mb-4 md:mb-8"
+              >
+                We supply highly quality organic products
+              </p>
+
+              <button
+                class="capitalize bg-primary text-lg md:text-xl py-[0.56rem] px-[1.12rem] md:py-5 md:px-[1.88rem] text-white font-medium md:font-extrabold rounded-lg"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+
+          <!-- two caret buttons -->
+          <a
+            href="#slide4"
+            class="bg-black p-[0.37rem] md:p-[0.88rem] rounded-full absolute top-1/2 -translate-y-1/2 left-[0.75rem] md:left-[3.75rem] z-20"
+            ><img
+              class="w-[0.75rem] sm:w-[1.75rem]"
+              src="./assets/icons/caret-left.svg"
+              alt="caret left"
+          /></a>
+          <a
+            href="#slide2"
+            class="bg-black p-[0.37rem] md:p-[0.88rem] rounded-full absolute top-1/2 -translate-y-1/2 right-[0.75rem] md:right-[3.75rem] z-20"
+            ><img
+              class="w-[0.75rem] sm:w-[1.75rem]"
+              src="./assets/icons/caret-right.svg"
+              alt="caret right"
+          /></a>
+        </div>
+
+        <!-- slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full h-full">
+          <!-- image of the slider -->
+          <img
+            class="block w-full h-full object-cover"
+            src="./assets/images/banner2.webp"
+            class="w-full"
+          />
+
+          <!-- overlay and text part -->
+          <div
+            class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-[#121212] to-[#12121200] flex justify-center pt-[1.69rem] sm:pt-[4.9375rem] lg:pt-[4.9375rem] z-10"
+          >
+            <div class="text-center">
+              <h1
+                class="text-white text-2xl md:text-6xl lg:text-7xl font-extrabold leading-[normal] mb-1 md:mb-6"
+              >
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+
+              <p
+                class="text-white font-normal text-sm md:text-xl md:font-medium mb-4 md:mb-8"
+              >
+                We supply highly quality organic products
+              </p>
+
+              <button
+                class="capitalize bg-primary text-lg md:text-xl py-[0.56rem] px-[1.12rem] md:py-5 md:px-[1.88rem] text-white font-medium md:font-extrabold rounded-lg"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+
+          <!-- two caret buttons -->
+          <a
+            href="#slide1"
+            class="bg-black p-[0.37rem] md:p-[0.88rem] rounded-full absolute top-1/2 -translate-y-1/2 left-[0.75rem] md:left-[3.75rem] z-20"
+            ><img
+              class="w-[0.75rem] sm:w-[1.75rem]"
+              src="./assets/icons/caret-left.svg"
+              alt="caret left"
+          /></a>
+          <a
+            href="#slide3"
+            class="bg-black p-[0.37rem] md:p-[0.88rem] rounded-full absolute top-1/2 -translate-y-1/2 right-[0.75rem] md:right-[3.75rem] z-20"
+            ><img
+              class="w-[0.75rem] sm:w-[1.75rem]"
+              src="./assets/icons/caret-right.svg"
+              alt="caret right"
+          /></a>
+        </div>
+
+        <!-- slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full h-full">
+          <!-- image of the slider -->
+          <img
+            class="block w-full h-full object-cover"
+            src="./assets/images/banner3.webp"
+            class="w-full"
+          />
+
+          <!-- overlay and text part -->
+          <div
+            class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-[#121212] to-[#12121200] flex justify-center pt-[1.69rem] sm:pt-[4.9375rem] lg:pt-[4.9375rem] z-10"
+          >
+            <div class="text-center">
+              <h1
+                class="text-white text-2xl md:text-6xl lg:text-7xl font-extrabold leading-[normal] mb-1 md:mb-6"
+              >
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+
+              <p
+                class="text-white font-normal text-sm md:text-xl md:font-medium mb-4 md:mb-8"
+              >
+                We supply highly quality organic products
+              </p>
+
+              <button
+                class="capitalize bg-primary text-lg md:text-xl py-[0.56rem] px-[1.12rem] md:py-5 md:px-[1.88rem] text-white font-medium md:font-extrabold rounded-lg"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+
+          <!-- two caret buttons -->
+          <a
+            href="#slide2"
+            class="bg-black p-[0.37rem] md:p-[0.88rem] rounded-full absolute top-1/2 -translate-y-1/2 left-[0.75rem] md:left-[3.75rem] z-20"
+            ><img
+              class="w-[0.75rem] sm:w-[1.75rem]"
+              src="./assets/icons/caret-left.svg"
+              alt="caret left"
+          /></a>
+          <a
+            href="#slide4"
+            class="bg-black p-[0.37rem] md:p-[0.88rem] rounded-full absolute top-1/2 -translate-y-1/2 right-[0.75rem] md:right-[3.75rem] z-20"
+            ><img
+              class="w-[0.75rem] sm:w-[1.75rem]"
+              src="./assets/icons/caret-right.svg"
+              alt="caret right"
+          /></a>
+        </div>
+
+        <!-- slide 4 -->
+
+        <div id="slide4" class="carousel-item relative w-full h-full">
+          <!-- image of the slider -->
+          <img
+            class="block w-full h-full object-cover"
+            src="./assets/images/banner4.webp"
+            class="w-full"
+          />
+
+          <!-- overlay and text part -->
+          <div
+            class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-[#121212] to-[#12121200] flex justify-center pt-[1.69rem] sm:pt-[4.9375rem] lg:pt-[4.9375rem] z-10"
+          >
+            <div class="text-center">
+              <h1
+                class="text-white text-2xl md:text-6xl lg:text-7xl font-extrabold leading-[normal] mb-1 md:mb-6"
+              >
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+
+              <p
+                class="text-white font-normal text-sm md:text-xl md:font-medium mb-4 md:mb-8"
+              >
+                We supply highly quality organic products
+              </p>
+
+              <button
+                class="capitalize bg-primary text-lg md:text-xl py-[0.56rem] px-[1.12rem] md:py-5 md:px-[1.88rem] text-white font-medium md:font-extrabold rounded-lg"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+
+          <!-- two caret buttons -->
+          <a
+            href="#slide3"
+            class="bg-black p-[0.37rem] md:p-[0.88rem] rounded-full absolute top-1/2 -translate-y-1/2 left-[0.75rem] md:left-[3.75rem] z-20"
+            ><img
+              class="w-[0.75rem] sm:w-[1.75rem]"
+              src="./assets/icons/caret-left.svg"
+              alt="caret left"
+          /></a>
+          <a
+            href="#slide1"
+            class="bg-black p-[0.37rem] md:p-[0.88rem] rounded-full absolute top-1/2 -translate-y-1/2 right-[0.75rem] md:right-[3.75rem] z-20"
+            ><img
+              class="w-[0.75rem] sm:w-[1.75rem]"
+              src="./assets/icons/caret-right.svg"
+              alt="caret right"
+          /></a>
+        </div>
+      </div>
     </header>
   </body>
 </html>
