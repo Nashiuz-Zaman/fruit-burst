@@ -33,7 +33,9 @@
         theme: {
           extend: {
             margin: {
-              sectionMargin: "8.75rem",
+              sectionMarginSm: "1.52rem",
+              sectionMarginMd: "4.5rem",
+              sectionMarginLg: "8.75rem",
             },
             boxShadow: {
               fruitFlexShadow: "0px 8px 60px 0px rgba(0, 0, 0, 0.05)",
@@ -58,7 +60,7 @@
       class="px-5 lg:px-0 lg:max-w-[90rem] mx-auto mt-[2rem] md:mt-[3.12rem]"
     >
       <nav
-        class="navbar bg-base-100 p-0 justify-between lg:py-10 lg:px-12 lg:bg-primary rounded-full mb-3 md:mb-14"
+        class="navbar bg-base-100 p-0 justify-between lg:py-10 lg:px-12 lg:bg-primary rounded-full mb-3 md:mb-10 lg:mb-14"
       >
         <ul class="hidden lg:flex gap-[1.88rem]">
           <li><a class="text-white" href="#">Home</a></li>
@@ -137,7 +139,7 @@
 
       <!-- carousel -->
       <section
-        class="carousel w-full aspect-[1.76/1] lg:aspect-[2.4/1] rounded-default overflow-hidden"
+        class="carousel w-full aspect-[1.76/1] lg:aspect-[2.4/1] rounded-default overflow-hidden mb-sectionMarginSm md:mb-sectionMarginMd lg:mb-0"
       >
         <!-- slide 1 -->
         <div id="slide1" class="carousel-item relative w-full h-full">
@@ -359,7 +361,7 @@
 
       <!-- fruit photos -->
       <section
-        class="hidden lg:flex px-[4.38rem] py-[3.06rem] max-w-[74.8rem] mx-auto shadow-fruitFlexShadow justify-between -mt-[8.25rem] relative z-50 bg-white rounded-default mb-sectionMargin"
+        class="hidden lg:flex px-[4.38rem] py-[3.06rem] max-w-[74.8rem] mx-auto shadow-fruitFlexShadow justify-between -mt-[8.25rem] relative z-50 bg-white rounded-default lg:mb-sectionMarginLg"
       >
         <div class="flex flex-col items-center">
           <img
@@ -408,82 +410,111 @@
       </section>
 
       <!-- deal of the day -->
-      <section class="mb-sectionMargin">
+      <section
+        class="mb-sectionMarginSm md:sectionMarginMd lg:mb-sectionMarginLg"
+      >
         <!-- top part -->
         <div
-          class="flex flex-col lg:flex-row justify-between items-center mb-[3rem]"
+          class="flex flex-col lg:flex-row justify-between items-center mb-5 lg:mb-12 gap-5 lg:gap-0"
         >
           <div>
             <h2
-              class="text-[3rem] font-extrabold text-darkText leading-[normal] mb-[1.5rem]"
+              class="text-[1.25rem] text-center lg:text-left md:text-[3rem] font-extrabold text-darkText leading-[normal] mb-[0.5rem] md:mb-[1.5rem]"
             >
               Deal of the day
             </h2>
-            <p class="text-[1rem] text-lightText">
+            <p
+              class="text-center w-[77%] lg:w-max mx-auto lg:mx-0 md:text-left text-[0.875rem] md:text-[1rem] text-lightText"
+            >
               Contrary to popular belief, is not simply random text. It has
-              roots in a piece of classical <br class="inline" />
+              roots in a piece of classical <br class="hidden lg:inline" />
               Latin literature from 45 BC, making it over 2000 years old.
             </p>
           </div>
 
-          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div
+            class="grid grid-flow-col gap-[0.8rem] md:gap-5 text-center auto-cols-max"
+          >
             <div class="flex flex-col">
-              <span class="countdown font-lato text-5xl">
+              <span
+                class="countdown font-lato text-[1.79931rem] md:text-[3rem]"
+              >
                 <span
-                  class="text-darkText text-[3rem] font-extrabold mb-[0.5rem]"
+                  class="text-darkText font-extrabold mb:[0.29rem] md:mb-2"
                   style="--value: 29"
                 ></span>
               </span>
               <span
-                class="text-lightText font-medium text-[1rem] leading-[1.625rem]"
+                class="text-lightText font-medium text-[0.59975rem] md:text-[1rem] leading-[1.625rem]"
                 >Days</span
               >
             </div>
-            <div class="pt-3">
-              <img src="./assets/icons/timer-dot.svg" alt="timer-icon" />
+            <!-- timer icon -->
+            <div class="pt-2 md:pt-3">
+              <img
+                class="w-[0.9rem] md:w-[1.5rem]"
+                src="./assets/icons/timer-dot.svg"
+                alt="timer-icon"
+              />
             </div>
 
             <div class="flex flex-col">
-              <span class="countdown font-lato text-5xl">
+              <span
+                class="countdown font-lato text-[1.79931rem] md:text-[3rem]"
+              >
                 <span
-                  class="text-darkText text-[3rem] font-extrabold mb-[0.5rem]"
+                  class="text-darkText font-extrabold mb:[0.29rem] md:mb-2"
                   style="--value: 15"
                 ></span>
               </span>
               <span
-                class="text-lightText font-medium text-[1rem] leading-[1.625rem]"
+                class="text-lightText font-medium text-[0.59975rem] md:text-[1rem] leading-[1.625rem]"
                 >Hours</span
               >
             </div>
-            <div class="pt-3">
-              <img src="./assets/icons/timer-dot.svg" alt="timer-icon" />
+            <!-- timer icon -->
+            <div class="pt-2 md:pt-3">
+              <img
+                class="w-[0.9rem] md:w-[1.5rem]"
+                src="./assets/icons/timer-dot.svg"
+                alt="timer-icon"
+              />
             </div>
 
             <div class="flex flex-col">
-              <span class="countdown font-lato text-5xl">
+              <span
+                class="countdown font-lato text-[1.79931rem] md:text-[3rem]"
+              >
                 <span
-                  class="text-darkText text-[3rem] font-extrabold mb-[0.5rem]"
+                  class="text-darkText font-extrabold mb:[0.29rem] md:mb-2"
                   style="--value: 25"
                 ></span>
               </span>
               <span
-                class="text-lightText font-medium text-[1rem] leading-[1.625rem]"
+                class="text-lightText font-medium text-[0.59975rem] md:text-[1rem] leading-[1.625rem]"
                 >Minutes</span
               >
             </div>
-            <div class="pt-3">
-              <img src="./assets/icons/timer-dot.svg" alt="timer-icon" />
+            <!-- timer icon -->
+            <div class="pt-2 md:pt-3">
+              <img
+                class="w-[0.9rem] md:w-[1.5rem]"
+                src="./assets/icons/timer-dot.svg"
+                alt="timer-icon"
+              />
             </div>
 
             <div class="flex flex-col">
-              <span class="countdown font-lato text-5xl">
+              <span
+                class="countdown font-lato text-[1.79931rem] md:text-[3rem]"
+              >
                 <span
-                  class="text-darkText text-[3rem] font-extrabold mb-[0.5rem]"
+                  class="text-darkText font-extrabold mb:[0.29rem] md:mb-2"
                   style="--value: 08"
                 ></span>
               </span>
               <span
-                class="text-lightText font-medium text-[1rem] leading-[1.625rem]"
+                class="text-lightText font-medium text-[0.59975rem] md:text-[1rem] leading-[1.625rem]"
                 >Seconds</span
               >
             </div>
@@ -491,7 +522,7 @@
         </div>
 
         <!-- cards container -->
-        <div class="grid lg:grid-cols-4 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- card 1-->
           <div
             class="rounded-default border border-[#1212121a] py-[3.12rem] px-12 text-center"
@@ -576,25 +607,27 @@
             <dialog id="modal1" class="modal">
               <form
                 method="dialog"
-                class="modal-box max-w-[50rem] px-4 py-[4.38rem] max-h-none"
+                class="modal-box max-w-[50rem] px-4 py-[4.38rem] lg:max-h-none"
               >
                 <img
-                  class="mx-auto h-[22.1875rem] mb-6"
+                  class="mx-auto h-[8rem] md:h-[14rem] lg:h-[22.1875rem] mb-4 md:mb-6"
                   src="./assets/images/modal1.webp"
                   alt="fruit photo"
                 />
 
-                <h3 class="text-darkText text-[2.5rem] font-bold mb-6">
+                <h3
+                  class="text-darkText text-[1.5rem] md:text-[2.5rem] font-bold mb-4 md:mb-6"
+                >
                   Apple
                 </h3>
-                <p class="text-lightText text-[1rem] mb-8">
+                <p class="text-lightText text-[1rem] mb-6 md:mb-8">
                   Professional employees are there for you to pick the most
-                  <br />
+                  <br class="hidden md:inline" />
                   amazing and fresh fruits.
                 </p>
 
                 <!-- rating stars -->
-                <div class="rating rating-lg rating-half mb-10">
+                <div class="rating rating-lg rating-half mb-8 md:mb-10">
                   <input type="radio" name="rating-10" class="rating-hidden" />
 
                   <input
@@ -654,8 +687,7 @@
                   />
                 </div>
 
-                <div class="flex gap-8 w-max mx-auto">
-                  <!-- if there is a button, it will close the modal -->
+                <div class="flex gap-4 md:gap-8 w-max mx-auto">
                   <button
                     class="py-5 px-[1.88rem] text-primary text-xl bg-white border border-primary hover:bg-primary rounded-default hover:text-white"
                   >
@@ -756,25 +788,27 @@
             <dialog id="modal2" class="modal">
               <form
                 method="dialog"
-                class="modal-box max-w-[50rem] px-4 py-[4.38rem] max-h-none"
+                class="modal-box max-w-[50rem] px-4 py-[4.38rem] lg:max-h-none"
               >
                 <img
-                  class="mx-auto h-[22.1875rem] mb-6"
+                  class="mx-auto h-[8rem] md:h-[14rem] lg:h-[22.1875rem] mb-4 md:mb-6"
                   src="./assets/images/modal2.webp"
                   alt="fruit photo"
                 />
 
-                <h3 class="text-darkText text-[2.5rem] font-bold mb-6">
+                <h3
+                  class="text-darkText text-[1.5rem] md:text-[2.5rem] font-bold mb-4 md:mb-6"
+                >
                   Orange
                 </h3>
-                <p class="text-lightText text-[1rem] mb-8">
+                <p class="text-lightText text-[1rem] mb:6 md:mb-8">
                   Professional employees are there for you to pick the most
-                  <br />
+                  <br class="hidden md:inline" />
                   amazing and fresh fruits.
                 </p>
 
                 <!-- rating stars -->
-                <div class="rating rating-lg rating-half mb-10">
+                <div class="rating rating-lg rating-half mb:8 md:mb-10">
                   <input type="radio" name="rating-10" class="rating-hidden" />
 
                   <input
@@ -834,8 +868,7 @@
                   />
                 </div>
 
-                <div class="flex gap-8 w-max mx-auto">
-                  <!-- if there is a button, it will close the modal -->
+                <div class="flex gap-4 md:gap-8 w-max mx-auto">
                   <button
                     class="py-5 px-[1.88rem] text-primary text-xl bg-white border border-primary hover:bg-primary rounded-default hover:text-white"
                   >
@@ -938,25 +971,27 @@
             <dialog id="modal3" class="modal">
               <form
                 method="dialog"
-                class="modal-box max-w-[50rem] px-4 py-[4.38rem] max-h-none"
+                class="modal-box max-w-[50rem] px-4 py-[4.38rem] lg:max-h-none"
               >
                 <img
-                  class="mx-auto h-[22.1875rem] mb-6"
+                  class="mx-auto h-[8rem] md:h-[14rem] lg:h-[22.1875rem] mb-4 md:mb-6"
                   src="./assets/images/modal3.webp"
                   alt="fruit photo"
                 />
 
-                <h3 class="text-darkText text-[2.5rem] font-bold mb-6">
+                <h3
+                  class="text-darkText text-[1.5rem] md:text-[2.5rem] font-bold mb-4 md:mb-6"
+                >
                   Red Dragon
                 </h3>
-                <p class="text-lightText text-[1rem] mb-8">
+                <p class="text-lightText text-[1rem] mb-6 md:mb-8">
                   Professional employees are there for you to pick the most
-                  <br />
+                  <br class="hidden md:inline" />
                   amazing and fresh fruits.
                 </p>
 
                 <!-- rating stars -->
-                <div class="rating rating-lg rating-half mb-10">
+                <div class="rating rating-lg rating-half mb-8 md:mb-10">
                   <input type="radio" name="rating-10" class="rating-hidden" />
 
                   <input
@@ -1016,8 +1051,7 @@
                   />
                 </div>
 
-                <div class="flex gap-8 w-max mx-auto">
-                  <!-- if there is a button, it will close the modal -->
+                <div class="flex gap-4 md:gap-8 w-max mx-auto">
                   <button
                     class="py-5 px-[1.88rem] text-primary text-xl bg-white border border-primary hover:bg-primary rounded-default hover:text-white"
                   >
@@ -1118,25 +1152,27 @@
             <dialog id="modal4" class="modal">
               <form
                 method="dialog"
-                class="modal-box max-w-[50rem] px-4 py-[4.38rem] max-h-none"
+                class="modal-box max-w-[50rem] px-4 py-[4.38rem] lg:max-h-none"
               >
                 <img
-                  class="mx-auto h-[22.1875rem] mb-6"
+                  class="mx-auto h-[8rem] md:h-[14rem] lg:h-[22.1875rem] mb-4 md:mb-6"
                   src="./assets/images/modal4.webp"
                   alt="fruit photo"
                 />
 
-                <h3 class="text-darkText text-[2.5rem] font-bold mb-6">
+                <h3
+                  class="text-darkText text-[1.5rem] md:text-[2.5rem] font-bold mb-4 md:mb-6"
+                >
                   Banana
                 </h3>
-                <p class="text-lightText text-[1rem] mb-8">
+                <p class="text-lightText text-[1rem] mb-6 md:mb-8">
                   Professional employees are there for you to pick the most
-                  <br />
+                  <br class="hidden md:inline" />
                   amazing and fresh fruits.
                 </p>
 
                 <!-- rating stars -->
-                <div class="rating rating-lg rating-half mb-10">
+                <div class="rating rating-lg rating-half mb-8 md:mb-10">
                   <input type="radio" name="rating-10" class="rating-hidden" />
 
                   <input
@@ -1196,8 +1232,7 @@
                   />
                 </div>
 
-                <div class="flex gap-8 w-max mx-auto">
-                  <!-- if there is a button, it will close the modal -->
+                <div class="flex gap-4 md:gap-8 w-max mx-auto">
                   <button
                     class="py-5 px-[1.88rem] text-primary text-xl bg-white border border-primary hover:bg-primary rounded-default hover:text-white"
                   >
