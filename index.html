@@ -32,18 +32,27 @@
       tailwind.config = {
         theme: {
           extend: {
+            margin: {
+              sectionMargin: "8.75rem",
+            },
+            boxShadow: {
+              fruitFlexShadow: "0px 8px 60px 0px rgba(0, 0, 0, 0.05)",
+            },
             borderRadius: {
               default: "8px",
             },
             colors: {
               primary: "#F85559",
               darkText: "#121212",
+              mediumColorText: "#121212cc",
+              lightText: "#12121299",
             },
           },
         },
       };
     </script>
   </head>
+
   <body class="font-lato">
     <header
       class="px-5 lg:px-0 lg:max-w-[90rem] mx-auto mt-[2rem] md:mt-[3.12rem]"
@@ -127,7 +136,7 @@
       </nav>
 
       <!-- carousel -->
-      <div
+      <section
         class="carousel w-full aspect-[1.76/1] lg:aspect-[2.4/1] rounded-default overflow-hidden"
       >
         <!-- slide 1 -->
@@ -346,7 +355,239 @@
               alt="caret right"
           /></a>
         </div>
-      </div>
+      </section>
+
+      <!-- fruit photos -->
+      <section
+        class="hidden lg:flex px-[4.38rem] py-[3.06rem] max-w-[74.8rem] mx-auto shadow-fruitFlexShadow justify-between -mt-[8.25rem] relative z-50 bg-white rounded-default mb-sectionMargin"
+      >
+        <div class="flex flex-col items-center">
+          <img
+            class="h-[7rem] mb-4"
+            src="./assets/images/fruit1.webp"
+            alt="fruit"
+          />
+          <h3 class="text-xl text-mediumColorText font-medium">Grape</h3>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            class="h-[7rem] mb-4"
+            src="./assets/images/fruit2.webp"
+            alt="fruit"
+          />
+          <h3 class="text-xl text-mediumColorText font-medium">Orange</h3>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            class="h-[7rem] mb-4"
+            src="./assets/images/fruit3.webp"
+            alt="fruit"
+          />
+          <h3 class="text-xl text-mediumColorText font-medium">Mango</h3>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            class="h-[7rem] mb-4"
+            src="./assets/images/fruit4.webp"
+            alt="fruit"
+          />
+          <h3 class="text-xl text-mediumColorText font-medium">Strawberry</h3>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img
+            class="h-[7rem] mb-4"
+            src="./assets/images/fruit5.webp"
+            alt="fruit"
+          />
+          <h3 class="text-xl text-mediumColorText font-medium">Pomegranate</h3>
+        </div>
+      </section>
+
+      <!-- deal of the day -->
+      <section class="mb-sectionMargin">
+        <!-- top part -->
+        <div class="flex justify-between items-center mb-[3rem]">
+          <div>
+            <h2
+              class="text-[3rem] font-extrabold text-darkText leading-[normal] mb-[1.5rem]"
+            >
+              Deal of the day
+            </h2>
+            <p class="text-[1rem] text-lightText">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical <br class="inline" />
+              Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+          </div>
+
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-lato text-5xl">
+                <span
+                  class="text-darkText text-[3rem] font-extrabold mb-[0.5rem]"
+                  style="--value: 29"
+                ></span>
+              </span>
+              <span
+                class="text-lightText font-medium text-[1rem] leading-[1.625rem]"
+                >Days</span
+              >
+            </div>
+            <div class="pt-3">
+              <img src="./assets/icons/timer-dot.svg" alt="timer-icon" />
+            </div>
+
+            <div class="flex flex-col">
+              <span class="countdown font-lato text-5xl">
+                <span
+                  class="text-darkText text-[3rem] font-extrabold mb-[0.5rem]"
+                  style="--value: 15"
+                ></span>
+              </span>
+              <span
+                class="text-lightText font-medium text-[1rem] leading-[1.625rem]"
+                >Hours</span
+              >
+            </div>
+            <div class="pt-3">
+              <img src="./assets/icons/timer-dot.svg" alt="timer-icon" />
+            </div>
+
+            <div class="flex flex-col">
+              <span class="countdown font-lato text-5xl">
+                <span
+                  class="text-darkText text-[3rem] font-extrabold mb-[0.5rem]"
+                  style="--value: 25"
+                ></span>
+              </span>
+              <span
+                class="text-lightText font-medium text-[1rem] leading-[1.625rem]"
+                >Minutes</span
+              >
+            </div>
+            <div class="pt-3">
+              <img src="./assets/icons/timer-dot.svg" alt="timer-icon" />
+            </div>
+
+            <div class="flex flex-col">
+              <span class="countdown font-lato text-5xl">
+                <span
+                  class="text-darkText text-[3rem] font-extrabold mb-[0.5rem]"
+                  style="--value: 08"
+                ></span>
+              </span>
+              <span
+                class="text-lightText font-medium text-[1rem] leading-[1.625rem]"
+                >Seconds</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div>
+          <div
+            class="w-96 rounded-default border border-[#1212121a] py-[3.12rem] px-12 text-center"
+          >
+            <img
+              src="./assets/images/card1.webp"
+              alt="fruit photo"
+              class="w-[6.625rem] mb-12 mx-auto"
+            />
+            <p
+              class="text-darkText text-2xl font-bold border-b border-[#1212121a] pb-6 mb-6"
+            >
+              12.90$ - 18.85$
+            </p>
+
+            <div class="">
+              <h3 class="text-[1rem] text-lightText font-bold mb-6">Apples</h3>
+
+              <div class="rating rating-md rating-half mb-6">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-1"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-primary mask mask-star-2 mask-half-2"
+                />
+              </div>
+
+              <button
+                class="btn block bg-white border-none text-primary capitalize hover:bg-primary hover:text-white mx-auto text-lg font-bold"
+                onclick="my_modal_5.showModal()"
+              >
+                Details
+              </button>
+
+              <dialog
+                id="my_modal_5"
+                class="modal modal-bottom sm:modal-middle"
+              >
+                <form method="dialog" class="modal-box">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">
+                    Press ESC key or click the button below to close
+                  </p>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>
