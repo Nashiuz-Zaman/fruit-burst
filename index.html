@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- lato import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind and daisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+
+    <!--  color variables -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lato">
+    <header class="px-5">
+      <nav
+        class="navbar bg-base-100 p-0 justify-between lg:py-10 lg:px-12 lg:bg-primary rounded-full"
+      >
+        <ul class="hidden lg:flex gap-[1.88rem]">
+          <li><a class="text-white" href="#">Home</a></li>
+          <li><a class="text-white" href="#">About Us</a></li>
+          <li><a class="text-white" href="#">Shop</a></li>
+          <li><a class="text-white" href="#">All Fruits</a></li>
+        </ul>
+
+        <div class="flex flex-1 lg:flex-none gap-2 lg:gap-4">
+          <img
+            class="w-8 lg:w-[3.4rem]"
+            src="./assets/images/logo.png"
+            alt="logo"
+          />
+          <a
+            class="btn btn-ghost normal-case text-xl font-bold p-0 lg:text-[2.5rem] lg:text-white"
+            >Fruit Burst</a
+          >
+        </div>
+
+        <!-- large screen search box -->
+        <div
+          class="hidden lg:flex flex-row w-[400px] items-center border bg-white rounded-full overflow-hidden px-[1.8rem] h-[3.5rem]"
+        >
+          <input
+            type="text"
+            placeholder="Search here"
+            class="flex-1 text-base p-0"
+          />
+          <img
+            class="block p-0"
+            src="./assets/icons/search-icon.svg"
+            alt="magnifying glass"
+          />
+        </div>
+
+        <div class="flex-none gap-2 lg:hidden">
+          <!-- dropdown part -->
+          <div class="dropdown dropdown-end lg:hidden">
+            <label tabindex="0" class="btn btn-ghost p-0">
+              <div class="w-6">
+                <img
+                  class="block w-full h-full"
+                  src="./assets/icons/menu-icon.svg"
+                />
+              </div>
+            </label>
+            <!-- dropdown menu -->
+            <ul
+              tabindex="0"
+              class="mt-3 z-[1] p-6 space-y-6 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-max"
+            >
+              <li
+                class="flex flex-row items-center w-full border border-black rounded-full overflow-hidden px-[1.8rem] h-[3.5rem]"
+              >
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  class="flex-1 text-base p-0"
+                />
+                <img
+                  class="block p-0"
+                  src="./assets/icons/search-icon.svg"
+                  alt="magnifying glass"
+                />
+              </li>
+              <li><a class="p-0" href="#">Home</a></li>
+              <li><a class="p-0" href="#">About Us</a></li>
+              <li><a class="p-0" href="#">Shop</a></li>
+              <li><a class="p-0" href="#">All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
