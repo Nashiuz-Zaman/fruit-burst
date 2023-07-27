@@ -56,8 +56,9 @@
   </head>
 
   <body class="font-lato">
+    <!-- header starts here -->
     <header
-      class="px-5 lg:px-0 lg:max-w-[90rem] mx-auto mt-[2rem] md:mt-[3.12rem]"
+      class="px-5 2xl:px-0 xl:max-w-[90rem] mx-auto mt-[2rem] md:mt-[3.12rem]"
     >
       <nav
         class="navbar bg-base-100 p-0 justify-between lg:py-10 lg:px-12 lg:bg-primary rounded-full mb-3 md:mb-10 lg:mb-14"
@@ -408,7 +409,10 @@
           <h3 class="text-xl text-mediumColorText font-medium">Pomegranate</h3>
         </div>
       </section>
+    </header>
 
+    <!-- main starts here -->
+    <main class="px-5 2xl:px-0 xl:max-w-[90rem] mx-auto">
       <!-- deal of the day -->
       <section
         class="mb-sectionMarginSm md:sectionMarginMd lg:mb-sectionMarginLg"
@@ -1249,6 +1253,146 @@
           </div>
         </div>
       </section>
-    </header>
+
+      <!-- meet the team -->
+      <section
+        class="py-6 md:py-[7.5rem] bg-cover bg-center rounded-default relative mb-sectionMarginSm md:sectionMarginMd lg:mb-sectionMarginLg"
+        style="
+          background-image: linear-gradient(
+              to right,
+              rgba(18, 18, 18, 0.7),
+              rgba(18, 18, 18, 0.7)
+            ),
+            url('./assets/images/team.webp');
+        "
+      >
+        <div class="absolute top-0 left-0 w-full h-full"></div>
+        <h2
+          class="text-white font-extrabold text-xl md:text-5xl text-center mb-2 md:mb-6"
+        >
+          Meet the team
+        </h2>
+        <p
+          class="text-white text-sm md:text-base text-center mb-5 md:mb-12 px-[1.81rem] leading-6"
+        >
+          Contrary to popular belief, is not simply random text. It has roots in
+          a piece of classical <br class="hidden md:inline" />
+          Latin literature from 45 BC, making it over 2000 years old.
+        </p>
+
+        <!-- team member container -->
+        <div
+          class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 w-max mx-auto md:gap-16 xl:gap-[6.8rem]"
+        >
+          <!-- member 1 -->
+          <div class="flex flex-col items-center">
+            <img
+              class="mb-8 w-[8.5rem]"
+              src="./assets/images/member1.webp"
+              alt="team member"
+            />
+
+            <h3 class="text-white text-2xl mb-2">Awlad Hossain</h3>
+            <p class="text-white mb-4">Fruits Expert</p>
+            <div class="flex gap-3">
+              <a>
+                <img src="./assets/icons/facebook.svg" alt="social media" />
+              </a>
+              <a>
+                <img src="./assets/icons/twitter.svg" alt="social media" />
+              </a>
+              <a>
+                <img src="./assets/icons/linkedin.svg" alt="social media" />
+              </a>
+            </div>
+          </div>
+
+          <!-- member 2 -->
+          <div class="flex flex-col items-center">
+            <img
+              class="mb-8 w-[8.5rem]"
+              src="./assets/images/member2.webp"
+              alt="team member"
+            />
+
+            <h3 class="text-white text-2xl mb-2">Safia Chowdhury</h3>
+            <p class="text-white mb-4">Fruits Expert</p>
+            <div class="flex gap-3">
+              <a>
+                <img src="./assets/icons/facebook.svg" alt="social media" />
+              </a>
+              <a>
+                <img src="./assets/icons/twitter.svg" alt="social media" />
+              </a>
+              <a>
+                <img src="./assets/icons/linkedin.svg" alt="social media" />
+              </a>
+            </div>
+          </div>
+
+          <!-- member 3 -->
+          <div class="flex flex-col items-center">
+            <img
+              class="mb-8 w-[8.5rem]"
+              src="./assets/images/member3.webp"
+              alt="team member"
+            />
+
+            <h3 class="text-white text-2xl mb-2">Rokib Hossain</h3>
+            <p class="text-white mb-4">Fruits Expert</p>
+            <div class="flex gap-3">
+              <a>
+                <img src="./assets/icons/facebook.svg" alt="social media" />
+              </a>
+              <a>
+                <img src="./assets/icons/twitter.svg" alt="social media" />
+              </a>
+              <a>
+                <img src="./assets/icons/linkedin.svg" alt="social media" />
+              </a>
+            </div>
+          </div>
+
+          <!-- member 4 -->
+          <div class="flex flex-col items-center">
+            <img
+              class="mb-8 w-[8.5rem]"
+              src="./assets/images/member4.webp"
+              alt="team member"
+            />
+
+            <h3 class="text-white text-2xl mb-2">Chaity</h3>
+            <p class="text-white mb-4">Fruits Expert</p>
+            <div class="flex gap-3">
+              <a>
+                <img src="./assets/icons/facebook.svg" alt="social media" />
+              </a>
+              <a>
+                <img src="./assets/icons/twitter.svg" alt="social media" />
+              </a>
+              <a>
+                <img src="./assets/icons/linkedin.svg" alt="social media" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why choose us section -->
+      <section>
+        <h2
+          class="text-darkText font-extrabold text-xl md:text-5xl text-center mb-2 md:mb-6 capitalize"
+        >
+          Why choose us
+        </h2>
+        <p
+          class="text-lightText text-sm md:text-base text-center mb-5 md:mb-12 px-[1.81rem] leading-6"
+        >
+          Contrary to popular belief, is not simply random text. It has roots in
+          a piece of classical <br class="hidden md:inline" />
+          Latin literature from 45 BC, making it over 2000 years old.
+        </p>
+      </section>
+    </main>
   </body>
 </html>
